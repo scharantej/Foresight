@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model Results</title>
+</head>
+<body>
+<h1>Model Results</h1>
+<p>The following are the model metrics:</p>
+<ul>
+{% for metric, value in metrics.items() %}
+<li>{{ metric }}: {{ value }}</li>
+{% endfor %}
+</ul>
+<p>The following are the predicted values:</p>
+<ul>
+{% for prediction in predictions %}
+<li>{{ prediction }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
